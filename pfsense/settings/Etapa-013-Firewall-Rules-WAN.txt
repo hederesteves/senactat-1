@@ -127,13 +127,13 @@ System
 				User Properties
 					Defined USER 
 					Disable: OFF
-					Username: SEU_USUÁRIO
+					Username: senac
 					Password: 123@senac
 					Confirm Password: 123@senac
-					Full name: Robson Vaamonde
+					Full name: Heder Esteves
 					Expiration date: OFF
 					Custom Settings: OFF
-					Group membership: Member of: SEU_DOMINIO
+					Group membership: Member of: heder.intra
 					Certificate: OFF
 				Keys
 					Authorized SSH Keys: (copiar e colocar a chave RSA do SSH)

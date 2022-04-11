@@ -44,7 +44,7 @@ System
 		Groups
 			+ADD
 				Group Properties
-					Group name: SEU_DOMINIO
+					Group name: heder.intra
 					Scope: Local
 					Description: Grupo de Usuários Admin do pfSense
 					Group membership: Default
@@ -66,13 +66,13 @@ System
 				User Properties
 					Defined USER 
 					Disable: OFF
-					Username: SEU_USUARIO
+					Username: senac
 					Password: 123@senac
 					Confirm Password: 123@senac
-					Full name: Seu Usuário
+					Full name: senac
 					Expiration date: OFF
 					Custom Settings: OFF
-					Group membership: Member of: SEU_DOMINIO
+					Group membership: Member of: heder.intra
 					Certificate: OFF
 				Keys
 					Authorized SSH Keys: Default
@@ -100,7 +100,7 @@ Configuração dos privilégios e atribuídos no pfSense
 System
 	User Manager
 		Groups
-			SEU_DOMINIO
+			heder.intra
 				Edit Group
 					Assigned Privileges
 						+ADD
@@ -129,7 +129,7 @@ System
 System
 	User Manager
 		Users
-			SEU_USUARIO
+			heder.intra
 				Edit User
 					Effective Privileges
 						+ADD
@@ -144,8 +144,8 @@ System
 	sudo
 		User Privileges
 			+ADD
-				Group: SEU_DOMINIO	- User: root - Command List: ALL
-				User.: SEU_USUARIO	- User: root - Command List: ALL
+				Group: heder.intra	- User: root - Command List: ALL
+				User.: senac	- User: root - Command List: ALL
 		Save
 
 Desabilitando o usuário admin padrão do pfSense
@@ -158,28 +158,28 @@ System
 						Disabled: ON
 				Save
 
-Autenticando o usuário: SEU_USUARIO no Console do pfSense
-Login: SEU_USUARIO
+Autenticando o usuário: senac no Console do pfSense
+Login: senac
 Password: 123@senac
 	Executando o script do console: sudo /etc/./rc.initial
 		Password: 123@senac
 	Criando o script de inicialização: echo "sudo /etc/./rc.initial" > .login
 
-Gerando a Chave Pública do SSH para a autenticação do usuário: SEU_USUARIO no pfSense
+Gerando a Chave Pública do SSH para a autenticação do usuário: senac no pfSense
 Terminal
 	ssh-keygen
-	Enter file in which to save the key (/home/SEU_USUARIO/.ssh/id_rsa): /home/Administrator/.ssh/pfSense-admin <Enter>
+	Enter file in which to save the key (/home/senac/.ssh/id_rsa): /home/Administrator/.ssh/pfSense-admin <Enter>
 	Enter passphrase (empty for no passphrase): <Enter>
 	Enter same passphrase again: <Enter>
-		cd /home/SEU_USUARIO/.ssh/
+		cd /home/senac/.ssh/
 		ls -lh
 		cat pfSense-admin.pub
 
-Configuração da Chave Pública do SSH no usuário: SEU_USUARIO do pfSense
+Configuração da Chave Pública do SSH no usuário: senac do pfSense
 System
 	User Manager
 		Users
-			SEU_USUARIO
+			senac
 				Edit Users
 					Keys
 						Authorized SSH Keys: (copiar e colocar o conteúdo da chave pública)
@@ -187,7 +187,7 @@ System
 
 Acessando remotamente o pfSense utilizando o Protocolo SSH
 Terminal
-	ssh seuusuario@172.16.??.254
+	ssh senac@172.16.20.254
 	Are you sure want to continue connecting? yes <Enter>
 	Password: 123@senac
 	Password: 123@Senac
