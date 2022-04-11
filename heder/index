@@ -1,0 +1,12 @@
+<html>
+<head><title>Site do Heder</title></head>	
+<body bgcolor="gray">
+<center><h1 style="color:rgb(52, 52, 224);">SENAC Tatuapé</h1></center>
+<center><h2 style="color:rgb(179, 4, 4);">Heder Esteves</h2></center>
+<br>
+<center><img src="logo-timao.png" width="200" height="200"></center><br><br>
+<center><a href="pagina1.html" target="_blank">Página 1</a></center><br><br>
+<center><a href="pagina2.html" target="_blank">Página 2</a></center><br><br>
+<center><a href="pagina3.html" target="_blank">Página 3</a></center><br><br>
+</body>
+</html>	
