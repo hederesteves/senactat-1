@@ -1,0 +1,11 @@
+Usuario: grupo2
+Senha: 123@grupo2
+
+
+****CONFIGURAÇÃO DO OpenVPN Remote Access Server Setup*****
+
+**Passo 9***
+  *Trocar o ip Tunnel Network (192.16.3.33 trocar)
+  *Trocar o ip Local Network (192.16.3.10 trocar)
+  *Trocar DNS Default Domain (192.16.3.10 trocar)
+ 
